@@ -1,0 +1,22 @@
+spring:
+  application:
+    name:
+      FlowableWorkflow
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=flowable_workflow
+#    schema:
+    username: flowable
+    password: hJLn8X-c1vUer
+    hikari:
+      minimum-idle: 1
+      maximum-pool-size: 5
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
